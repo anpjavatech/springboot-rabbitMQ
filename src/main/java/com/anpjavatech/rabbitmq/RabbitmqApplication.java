@@ -1,0 +1,14 @@
+package com.anpjavatech.rabbitmq;
+
+import com.anpjavatech.rabbitmq.configuration.RabbitMQConfiguration;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RabbitmqApplication {
+
+	public static void main(String[] args) {
+		Class[] configurations = {RabbitMQConfiguration.class,RabbitmqApplication.class};
+		SpringApplication.run(configurations, args);
+	}
+}
